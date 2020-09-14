@@ -1,0 +1,51 @@
+= China Dictatorship Media
+
+Images and other blobs for https://github.com/cirosantilli/china-dictatorship
+
+Keeping in a separate repo to keep the clone lightweight.
+
+The images were previously stored in the https://cirosantilli.com/china-dictatorship/#wayback-machine[Wayback Machine], but we decided to clone them here because the Wayback Machine is blocked in China.
+
+As mentioned at: https://github.com/cirosantilli/china-dictatorship#mirrors when viewing in https://github.com/cirosantilli/china-dictatorship https://help.github.com/en/github/authenticating-to-github/about-anonymized-image-urls[GitHub's camo] likely allows the images to be viewed regardless of the GFW.
+
+However, github.com is not acceptable as the only view because it cuts up the input source at a limit. Therefore, by using GitHub to serve the images, they remain visible on cirosantilli.com, which goes not use GitHub camo system. And once that gets blocked, the images will still be visible on the manual website download.
+
+Each image is properly sourced and documented at https://github.com/cirosantilli/china-dictatorship[], and the source is always archived in Wayback Machine.
+
+Original import command on china-dictatorship e39d01809e4cadeb717a4fdeeb370cd6e52ac239:
+
+....
+grep image::https ../china-dictatorship/README.adoc | perl -lap -e 's/image:://;s/\[height.*//' | sort -u > urls.txt
+wget -i urls.txt
+rm urls.txt
+....
+
+Manually handle same basename duplicates:
+
+....
+perl -lap -e 's/.*\///;s/\?.*//' urls.txt
+....
+
+and then finish the rename:
+
+....
+rename 's/\?.*//' *
+....
+
+Now do some more manual work, and also update README.adoc:
+
+* resolve any conflicts manually due to the `?` removal
+* add extensions to any images without extension
++
+....
+ls | grep -Ev png | grep -Ev jpg | grep -Ev jpeg | grep -Ev JPG | grep -Ev webp | grep -Ev gif | grep -Ev svg
+....
+
+Finally update the README.adoc:
+
+....
+perl -pi -e 's/image::http.*\//image::http{china-dictatorship-media-base}\//' ../china-dictatorship/README.adoc
+perl -pi -e 's/(image::http.*)\?.*[height/$1[/' ../china-dictatorship/README.adoc
+....
+
+After the original import, a quick website benchmark was made. GitHub serves images much faster than the Wayback Machine, but it also rate limits much faster, before all of can be loaded, and many image downloads would fail. So at the same we migrated the images here, we also hacked Asciidoctor templates with https://stackoverflow.com/questions/2321907/how-do-you-make-images-load-lazily-only-when-they-are-in-the-viewport/57389607#57389607[`loading="lazy"`], to only load images as they are hovered, thus solving that problem, and saving GitHub some bandwidth.
