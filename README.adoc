@@ -49,3 +49,11 @@ perl -pi -e 's/(image::http.*)\?.*[height/$1[/' ../china-dictatorship/README.ado
 ....
 
 After the original import, a quick website benchmark was made. GitHub serves images much faster than the Wayback Machine, but it also rate limits much faster, before all of can be loaded, and many image downloads would fail. So at the same we migrated the images here, we also hacked Asciidoctor templates with https://stackoverflow.com/questions/2321907/how-do-you-make-images-load-lazily-only-when-they-are-in-the-viewport/57389607#57389607[`loading="lazy"`], to only load images as they are hovered, thus solving that problem, and saving GitHub some bandwidth.
+
+Renames, keeping both for now to not break old images, but might give up one day:
+
+* Falun_Gong_Ghuangzhou.jpg -> Falun_Gong_Guangzhou.jpg
+* Falun_Gong_sky_advertisement.jpg -> Falun_Gong_sky_leaflet.jpg
+* Tianmen_crushed_dead.jpg -> Tiananmen_crushed_dead.jpg
+* Tianmen_lesbian_kiss.jpg -> Tiananmen_lesbian_kiss.jpg
+* Tianmen_sea.jpg -> Tiananmen_sea.jpg
