@@ -57,3 +57,4 @@ Renames, keeping both for now to not break old images, but might give up one day
 * Tianmen_crushed_dead.jpg -> Tiananmen_crushed_dead.jpg
 * Tianmen_lesbian_kiss.jpg -> Tiananmen_lesbian_kiss.jpg
 * Tianmen_sea.jpg -> Tiananmen_sea.jpg
+* Jaign_zemin_magnify.jpg -> Jiang_Zemin_magnify.jpg
