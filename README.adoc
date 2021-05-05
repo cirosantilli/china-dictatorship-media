@@ -52,9 +52,10 @@ After the original import, a quick website benchmark was made. GitHub serves ima
 
 Renames, keeping both for now to not break old images, but might give up one day:
 
+* Chenmei_Caowei.png -> Chenmei_Caowei.jpg
 * Falun_Gong_Ghuangzhou.jpg -> Falun_Gong_Guangzhou.jpg
 * Falun_Gong_sky_advertisement.jpg -> Falun_Gong_sky_leaflet.jpg
+* Jaign_zemin_magnify.jpg -> Jiang_Zemin_magnify.jpg
 * Tianmen_crushed_dead.jpg -> Tiananmen_crushed_dead.jpg
 * Tianmen_lesbian_kiss.jpg -> Tiananmen_lesbian_kiss.jpg
 * Tianmen_sea.jpg -> Tiananmen_sea.jpg
-* Jaign_zemin_magnify.jpg -> Jiang_Zemin_magnify.jpg
