@@ -70,6 +70,8 @@ Change the maximum size, e.g. to produce a single huge image:
 ./bundle.py 999999999999
 ....
 
+but that fails due to ImageMagick or image format limitations.
+
 The output images are present under `./bundle`, e.g. `./bundle/00.jpg`, etc.
 
 Any individual images larger than the maximum size are ignored.
