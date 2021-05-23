@@ -56,10 +56,22 @@ If we see some glaring typo, we do a rename keeping both for now to not break ol
 ./rename.sh
 ....
 
-Bundle all images into 2MB limit for Stack Exchange upload:
+== bundle.py
+
+Bundle all images vertically side by side with a 2MB size limit for Stack Exchange upload:
 
 ....
 ./bundle.py
 ....
 
-The output images are present under `./bundle`.
+Change the maximum size, e.g. to produce a single huge image:
+
+....
+./bundle.py 999999999999
+....
+
+The output images are present under `./bundle`, e.g. `./bundle/00.jpg`, etc.
+
+Any individual images larger than the maximum size are ignored.
+
+The limit is maintained by starting with images such that the sum of their sizes does not go over the limit. Then if the merged image does, we remove one from the list and retry until we go under the limit.
