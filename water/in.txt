@@ -8,6 +8,8 @@ file Liu_Shihui_tshirt.jpg
 outpoint 0.9
 file Yue_Xin_Jasic_shirt.jpg
 outpoint 0.9
+file Chai_Ling_People_s_Daily_speech.jpg
+outpoint 0.9
 file Pu_Zhiqiang_tshirt.jpg
 outpoint 0.9
 file Fang_Bin_revolt_2020.jpg
@@ -33,8 +35,6 @@ outpoint 0.9
 file Wu_Gan_police.jpg
 outpoint 0.9
 file Tiananmen_students_sitting.jpg
-outpoint 0.9
-file Anonymous_middle_fingers.jpg
 outpoint 0.9
 file Tank_Man.jpg
 outpoint 0.9
