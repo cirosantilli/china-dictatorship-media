@@ -7,7 +7,7 @@
 cp in.txt out/
 grep -E '^file ' in.txt | sed -E 's/^file //; s/\..*//' | while read f; do
   echo $f
-  echo convert -thumbnail 1280x720 -background blue -gravity center -extent 1280x720 "$(command ls -1 ../$f.* | grep -v .xcf | head -n1)" "out/$f.jpg"
+  convert -thumbnail 1280x720 -background black -gravity center -extent 1280x720 "$(command ls -1 ../$f.* | grep -v .xcf | head -n1)" "out/$f.jpg"
 done
 cd out
 ffmpeg -y -f concat -i in.txt -ss 0:36.5 -i in.flac -c:v libx264 -c:a libvorbis -shortest -r 30 -pix_fmt yuv420p water.mp4
