@@ -10,6 +10,8 @@ file Yue_Xin_Jasic_shirt.jpg
 outpoint 0.9
 file Pu_Zhiqiang_tshirt.jpg
 outpoint 0.9
+file Fang_Bin_revolt_2020.jpg
+outpoint 0.9
 file Tianmen_lesbian_kiss.jpg
 outpoint 0.9
 file Chenmei_Caowei.jpg
