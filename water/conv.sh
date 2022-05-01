@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# https://stackoverflow.com/questions/24961127/how-to-create-a-video-from-images-with-ffmpeg/37478183
 #set -e
 #mkdir -p out
 #youtube-dl https://www.youtube.com/watch?v=MeUiaxaRMK8
