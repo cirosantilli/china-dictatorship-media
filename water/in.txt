@@ -20,7 +20,7 @@ file Chenmei_Caowei.jpg
 outpoint 0.9
 file Programthink.jpg
 outpoint 0.9
-file Tiananmen_helmet.jpg
+file Liu_Xiaobo_Tiananmen_1989_06_02.jpg
 outpoint 0.9
 file Chloe_Zhao_won_93rd_Oscar.jpg
 outpoint 0.9
