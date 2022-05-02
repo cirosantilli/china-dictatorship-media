@@ -1,3 +1,4 @@
 *.xcf
 bundle
+tmp
 water/out
